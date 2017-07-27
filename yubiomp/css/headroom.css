@@ -1,0 +1,283 @@
+[hidden] {
+    display: none
+}
+
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+.hidden {
+    display: none !important;
+    visibility: hidden
+}
+
+.visually-hidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px
+}
+
+.visually-hidden.focusable:active, .visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto
+}
+
+.invisible {
+    visibility: hidden
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table
+}
+
+.clearfix:after {
+    clear: both
+}
+
+
+.nav {
+    padding: 0;
+    list-style: none;
+    margin-bottom: 0;
+    float: right
+}
+
+.nav__item {
+    display: inline-block
+}
+
+@media screen and (min-width: 40em) {
+    .nav__item {
+        display: inline-block
+    }
+}
+
+.nav__item:hover {
+    background-color: rgba(78, 205, 196, 0.1)
+}
+
+.nav__item a {
+    display: inline-block;
+    padding: 1em;
+    border: none
+}
+
+.brand {
+    font-family: "PolygonPixel5x7Standard";
+    font-size: 16px;
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em 1em;
+    color: #fff;
+    -webkit-font-smoothing: antialiased
+}
+
+.icon {
+    font-family: 'fontello';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased
+}
+
+.header {
+    font-family: "PolygonPixel5x7Standard";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    background-color: #111
+}
+
+.header__link {
+    color: #A9ABAE;
+    text-decoration: none;
+    border: none
+}
+
+.header__link:focus {
+    outline: none;
+    background-color: rgba(78, 205, 196, 0.1)
+}
+
+.header__link:hover .icon {
+    color: #4ECDC4
+}
+
+.header--fixed {
+    position: fixed;
+    z-index: 10;
+    right: 0;
+    left: 0;
+    top: 0
+}
+
+.headroom {
+    transition: transform .25s ease-in-out;
+    will-change: transform
+}
+
+.headroom--pinned {
+    transform: translateY(0)
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%)
+}
+
+
+.animated {
+    -webkit-animation-duration: .5s;
+    -moz-animation-duration: .5s;
+    -o-animation-duration: .5s;
+    animation-duration: .5s;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    will-change: transform, opacity
+}
+
+@-webkit-keyframes slideDown {
+    0% {
+        -webkit-transform: translateY(-100%)
+    }
+    100% {
+        -webkit-transform: translateY(0)
+    }
+}
+
+@-moz-keyframes slideDown {
+    0% {
+        -moz-transform: translateY(-100%)
+    }
+    100% {
+        -moz-transform: translateY(0)
+    }
+}
+
+@-o-keyframes slideDown {
+    0% {
+        -o-transform: translateY(-100%)
+    }
+    100% {
+        -o-transform: translateY(0)
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%)
+    }
+    100% {
+        transform: translateY(0)
+    }
+}
+
+.animated.slideDown {
+    -webkit-animation-name: slideDown;
+    -moz-animation-name: slideDown;
+    -o-animation-name: slideDown;
+    animation-name: slideDown
+}
+
+@-webkit-keyframes slideUp {
+    0% {
+        -webkit-transform: translateY(0)
+    }
+    100% {
+        -webkit-transform: translateY(-100%)
+    }
+}
+
+@-moz-keyframes slideUp {
+    0% {
+        -moz-transform: translateY(0)
+    }
+    100% {
+        -moz-transform: translateY(-100%)
+    }
+}
+
+@-o-keyframes slideUp {
+    0% {
+        -o-transform: translateY(0)
+    }
+    100% {
+        -o-transform: translateY(-100%)
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(0)
+    }
+    100% {
+        transform: translateY(-100%)
+    }
+}
+
+.animated.slideUp {
+    -webkit-animation-name: slideUp;
+    -moz-animation-name: slideUp;
+    -o-animation-name: slideUp;
+    animation-name: slideUp
+}
+
+.complimentary {
+    display: none
+}
+
+@media screen and (min-width: 40em) {
+    .complimentary {
+        font-size: 0.7em;
+        display: inline;
+    }
+    .brand {
+        font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 45em) {
+    .complimentary {
+        font-size: 1em;
+        display: inline;
+    }
+    .brand {
+        font-size: 32px;
+    }
+}
+
+media print {
+    .hide-from-print {
+        display: none
+    }
+}
+
+.container {
+    max-width: 41em;
+    margin: 0 auto;
+    padding: 0 1.5em
+}
+
+.container--wide {
+    max-width: 51em
+}

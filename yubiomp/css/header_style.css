@@ -1,0 +1,47 @@
+a {
+  text-decoration: none;
+}
+.blurImg {
+  position: relative;
+  width: 100%;
+  height: 360px;
+  z-index: -1;
+  top: -80px;
+  left: auto;
+}
+.blurImg > div {
+  position: fixed;
+}
+@media screen and (min-height: 600px) {
+  .blurImg {
+    height: 400px;
+  }
+}
+@media screen and (min-height: 800px) {
+  .blurImg {
+    height: 500px;
+  }
+}
+@media screen and (min-height: 900px) {
+  .blurImg {
+    height: 560px;
+  }
+}
+
+/*@media screen and (min-height: 600px) {
+    .blurImg > div {
+        height: 440px;
+        width: 100%;
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
+        background-position: center center;
+    }
+}*/
+
+.blur {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}

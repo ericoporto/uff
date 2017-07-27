@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'PolygonPixel5x7Standard';
+  src: url('../font/PolygonPixel5x7Standard.ttf');
+}
+
+@font-face {
+  font-family: 'Hardpixel';
+  src: url('../font/Hardpixel.OTF');
+}
+
+.purpletext {
+  margin: 0 0;
+  line-height: 1.8;
+  font-size: 18px;
+  padding: 0 0;
+  max-width: 100%;
+  background: rgb(43, 0, 44);
+  color: #EEE;
+  z-index: 1;
+}
+
+.purpletext p {
+  max-width: 650px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.maintext {
+  font-family: "Hardpixel";
+  font-style: normal;
+  font-weight: normal;
+  margin: 0 0;
+  line-height: 1.8;
+  font-size: 16px;
+  padding: 0 0;
+  max-width: 100%;
+  background: #111;
+  color: #EEE;
+  z-index: 1;
+}
+
+.maintext  p {
+  max-width: 650px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+.forwindows {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.mainheader {
+  z-index: 1;
+  color: #FFF;
+  margin: 40px auto;
+  position: absolute;
+  padding-top: 0;
+  top: 0;
+  width: 100%;
+}
+.mainheader p {
+  max-width: 650px;
+  margin: 0 auto;
+  padding-top: 20px;
+  font-family: "PolygonPixel5x7Standard";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  text-align: center;
+  color: #EEE;
+}
+
+.hideinsmall {
+  display: none;
+  visibility: hidden;
+  text-align: center;
+}
+
+@media screen and (min-height: 800px) {
+  .hideinsmall {
+    display: block;
+    visibility: visible;
+    text-align: center;
+  }
+  .mainheader{
+    padding-top: 150px;
+  }
+}
+
+h1 {
+  font-weight: 800;
+  font-size: 3.4em;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body {
+
+  margin: 0 0;
+  padding: 0 0;
+  background: #111;
+}
+
+
+footer {
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2
+}
